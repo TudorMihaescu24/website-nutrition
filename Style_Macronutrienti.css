@@ -1,0 +1,351 @@
+@font-face {
+  font-family: Light;
+  src: url('Fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: Regular;
+  src: url('Fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: Bold;
+  src: url('Fonts/OpenSans-Bold.ttf');
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 300vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+
+
+.Meniu {
+  position: absolute;
+  top: 0;
+  background-color: #352d2f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+}
+
+.Logo {
+  text-decoration: none;
+  font-size: 30px;
+  color: #DFDFDF;
+  font-family: Bold;
+  padding: 5px 15px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Meniu ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+.Buton_Meniu {
+  text-decoration: none;
+  font-size: 20px;
+  color: #DFDFDF;
+  font-family: Light;
+  padding: 5px 15px;
+  transition: 0.5s;
+}
+
+.Buton_Meniu:hover {
+  color: #4E9F3D;
+  font-size: 21px;
+}
+
+.Meniu li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Partea1 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('Poze/Background_4.jpg');
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+.Partea1 h1 {
+  margin: 0;
+  font-family: Regular;
+  font-size: 85px;
+  position: relative;
+  color: #DFDFDF;
+  top: 400px;
+  left: 160px;
+    z-index: 10;
+}
+
+.Partea1 p {
+  margin: 0;
+  font-family: Light;
+  font-size: 30px;
+  position: relative;
+  color: #DFDFDF;
+  z-index: 3;
+  top: 420px;
+  left: 140px;
+  text-align: justify;
+  text-indent: 30px;
+  z-index: 10;
+}
+
+.OverlayP1 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1E5128;
+  opacity: 0.8;
+  z-index:6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ContinuaP1 {
+  margin: 0;
+  font-family: Light;
+  font-size: 40px;
+  position: relative;
+  text-decoration: none;
+  color: #DFDFDF;
+  z-index: 3;
+  top: 450px;
+  left: 60%;
+  border: 2px #DFDFDF solid;
+  border-radius: 15px;
+  padding: 2px 25px 2px 25px;
+  opacity: 0.9;
+  transition-duration: 0.5s;
+  z-index: 10;
+}
+
+.ContinuaP1:hover {
+  background-color: #DFDFDF;
+  color: #4E9F3D;
+  opacity: 0.9;
+}
+
+.ContinutP1 {
+  width: 80%;
+
+}
+
+.Card_1 {
+  position: relative;
+  background: #352d2f;
+  width: 100vw;
+  height: 140vh;
+  z-index: 4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Content_1 {
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 80%;
+  height: 70%;
+  background-color: #DFDFDF;
+  box-shadow: inset 0px 2px 43px -3px rgba(0, 0, 0, 0.6);
+}
+
+.Imagine_1 {
+  position: absolute;
+  margin: 0;
+  width: 35%;
+  height: 100%;
+  background-image: url('Poze/Img_C_1.jpg');
+  background-size: cover;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 2px 43px -3px rgba(0, 0, 0, 0.9);
+}
+
+.Content_1 h1 {
+  margin:0;
+  margin-top:20px;
+  margin-bottom: 20px;
+  font-family: Bold;
+  font-size: 85px;
+  margin-left: 40%;
+  width: 60%;
+}
+
+.Content_1 h2 {
+  margin:0;
+  margin-top:20px;
+  margin-bottom: 20px;
+  font-family: Regular;
+  font-size: 40px;
+  margin-left: 40%;
+  width: 60%;
+}
+
+
+.Content_1 p {
+  font-family: Light;
+  margin:0;
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 30px;
+  margin-left: 37%;
+  width: 60%;
+  margin-top:10px;
+}
+
+
+
+.Card_2 {
+  background: #352d2f;
+  width: 100vw;
+  height: 180vh;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 3;
+}
+
+.Content_2 {
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 80%;
+  height: 70%;
+  background-color: #DFDFDF;
+  box-shadow: inset 0px 2px 43px -3px rgba(0, 0, 0, 0.6);
+}
+
+.Imagine_2 {
+  position: absolute;
+  margin: 0;
+  right: 0;
+  width: 35%;
+  height: 100%;
+  background-image: url('Poze/Img_C_2.jpg');
+  background-size: cover;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 2px 43px -3px rgba(0, 0, 0, 0.9);
+}
+
+.Content_2 h1 {
+  margin:0;
+  margin-top:20px;
+  margin-bottom: 20px;
+  font-family: Bold;
+  font-size: 85px;
+  margin-left: 4%;
+  width: 60%;
+}
+
+.Content_2 h2 {
+  margin:0;
+  margin-top:20px;
+  margin-bottom: 20px;
+  font-family: Regular;
+  font-size: 40px;
+  margin-left: 4%;
+  width: 60%;
+}
+
+.Content_2 p {
+  font-family: Light;
+  margin:0;
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 30px;
+  margin-left: 3%;
+  width: 60%;
+  margin-top:10px;
+}
+
+
+
+.Card_3 {
+  position: relative;
+  background: #352d2f;
+  width: 100vw;
+  height: 175vh;
+    z-index: 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Content_3 {
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 80%;
+  height: 70%;
+  background-color: #DFDFDF;
+  box-shadow: inset 0px 2px 43px -3px rgba(0, 0, 0, 0.6);
+}
+
+.Imagine_3 {
+  position: absolute;
+  margin: 0;
+  width: 35%;
+  height: 100%;
+  background-image: url('Poze/Img_C_3.jpg');
+  background-size: cover;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 2px 43px -3px rgba(0, 0, 0, 0.9);
+}
+
+.Content_3 h1 {
+  margin:0;
+  margin-top:20px;
+  margin-bottom: 20px;
+  font-family: Bold;
+  font-size: 85px;
+  margin-left: 40%;
+  width: 60%;
+}
+
+.Content_3 h2 {
+  margin:0;
+  margin-top:20px;
+  margin-bottom: 20px;
+  font-family: Regular;
+  font-size: 40px;
+  margin-left: 40%;
+  width: 60%;
+}
+.Content_3 p {
+  font-family: Light;
+  margin:0;
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 30px;
+  margin-left: 37%;
+  width: 60%;
+  margin-top:10px;
+}
+
+p{
+  font-size: 10px;
+}

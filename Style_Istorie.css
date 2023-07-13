@@ -1,0 +1,310 @@
+@font-face {
+  font-family: Light;
+  src: url('Fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: Regular;
+  src: url('Fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: Bold;
+  src: url('Fonts/OpenSans-Bold.ttf');
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: #DFDFDF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 300vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.Meniu {
+  position: relative;
+  background-color: #352d2f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.Logo {
+  text-decoration: none;
+  font-size: 30px;
+  color: #DFDFDF;
+  font-family: Bold;
+  padding: 5px 15px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Meniu ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+.Buton_Meniu {
+  text-decoration: none;
+  font-size: 20px;
+  color: #DFDFDF;
+  font-family: Light;
+  padding: 5px 15px;
+  transition: 0.5s;
+}
+
+.Buton_Meniu:hover {
+  color: #4E9F3D;
+  font-size: 21px;
+}
+
+.Meniu li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Timeline:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  width: 2px;
+  top: -20px;
+  background: #352d2f;
+  z-index: 1;
+}
+
+.Timeline {
+  position: absolute;
+  width: 90vw;
+  padding: 50px 0;
+}
+
+.Timeline ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Dreapta {
+  height: 600px;
+}
+
+.Timeline ul li {
+  list-style: none;
+  box-sizing: border-box;
+  line-height: normal;
+  position: relative;
+  width: 50%;
+  padding: 40px 70px;
+}
+
+.Timeline ul li .Dreapta h2 {
+  color: #4E9F3D;
+  font-size: 35px;
+  font-family: Bold;
+}
+
+.Timeline ul li .Dreapta p {
+  color: #352d2f;
+  font-family: Light;
+  text-align: justify;
+  font-size: 26px;
+}
+
+.Timeline ul li .Stanga .ImagineP3 {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  z-index: 3;
+}
+
+.Timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.Timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.Timeline ul li:nth-child(odd):before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #4E9F3D;
+  border-radius: 50%;
+  right: -16px;
+  top: 75px;
+  z-index: 1;
+}
+
+.Timeline ul li:nth-child(even):before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #4E9F3D;
+  border-radius: 50%;
+  left: -14px;
+  top: 75px;
+  z-index: 1;
+}
+
+.Timeline ul li:nth-child(odd) .Stanga {
+  position: absolute;
+  margin: 0;
+  padding: 8px 16px;
+  color: #352d2f;
+  z-index: 1
+}
+
+.Timeline ul li:nth-child(even) .Stanga {
+  position: absolute;
+  top: 12px;
+  margin: 0;
+  padding: 8px 16px;
+  color: #352d2f;
+}
+
+.Timeline ul li:nth-child(odd) .Stanga {
+  position: absolute;
+  top: 100px;
+  right: -400px;
+  margin: 0;
+  padding: 8px 16px;
+  color: #352d2f;
+}
+
+.Timeline ul li:nth-child(even) .Stanga {
+  top: 100px;
+  left: -800px;
+  margin: 0;
+  padding: 8px 16px;
+}
+
+.Timeline ul li:nth-child(even) .Stanga .Overlay1P3 {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  background-color: #1E5128;
+  z-index: 2;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.Timeline ul li:nth-child(even) .Stanga .Overlay2P3 {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  background-color: #352d2f;
+  z-index: 1;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.Timeline ul li:nth-child(odd) .Stanga .Overlay1P3 {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  background-color: #1E5128;
+  z-index: 2;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.Timeline ul li:nth-child(odd) .Stanga .Overlay2P3 {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  background-color: #352d2f;
+  z-index: 1;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+#Img1 {
+  background-image: url('Poze/Hippocrates.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+#Img2 {
+  background-image: url('  Poze/Leonardo.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+#Img3 {
+  background-image: url('Poze/James.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+#Img4 {
+  background-image: url('  Poze/Antonie.jfif');
+  background-size: cover;
+  background-position: top;
+}
+
+#Img5 {
+  background-image: url('  Poze/Elemente.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+#Img6 {
+  background-image: url('  Poze/Justus.jpg');
+  background-size: cover;
+  background-position: 70% 0%;
+}
+
+#Img7 {
+  background-image: url('Poze/Christiaan.jpg');
+  background-size: cover;
+  background-position: 70% 0%;
+}
+
+#Img8 {
+  background-image: url('Poze/mccollum.png');
+  background-size: cover;
+  background-position: top;
+}
+
+#Img9 {
+  background-image: url('  Poze/Casmir.jpeg');
+  background-size: cover;
+  background-position: 30% 0%;
+}
+
+#Img10 {
+  background-image: url('  Poze/Linus.png');
+  background-size: cover;
+  background-position: 70% 0%;
+}
+
+#Img11 {
+  background-image: url('  Poze/SecXX.jpg');
+  background-size: cover;
+  background-position: 70% 0%;
+}

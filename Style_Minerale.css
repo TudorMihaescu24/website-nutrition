@@ -1,0 +1,1324 @@
+@font-face {
+  font-family: Light;
+  src: url('Fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: Regular;
+  src: url('Fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: Bold;
+  src: url('Fonts/OpenSans-Bold.ttf');
+}
+
+body {
+  background-color: #352d2f;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.Meniu {
+  position: absolute;
+  top: 0;
+  background-color: #352d2f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.Logo {
+  text-decoration: none;
+  font-size: 30px;
+  color: #DFDFDF;
+  font-family: Bold;
+  padding: 5px 15px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Partea1 {
+  padding-top: 120px;
+  width: 100vw;
+  height: 200vh;
+}
+
+.Partea1 ul {
+  margin-top: 100px;
+  list-style: none;
+  width: 100%;
+}
+
+.Partea1 li {
+  display: inline-block;
+  margin-left: 3.5%
+}
+
+.Card_1 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_1.jpg');
+}
+
+.Overlay1_Card_1 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_1 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_1 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_1 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_1 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_1 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_1 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_1 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_1:hover .Titlu1_Card_1 {
+  opacity: 0;
+}
+
+.Card_1:hover .Titlu2_Card_1 {
+  opacity: 0;
+}
+
+.Card_1:hover .Overlay2_Card_1 {
+  opacity: 1;
+}
+
+.Card_1:hover .Overlay2_Card_1 h3 {
+  opacity: 1;
+}
+
+.Card_1:hover .Overlay2_Card_1 h2 {
+  opacity: 1;
+}
+
+.Card_1:hover .Overlay2_Card_1 p {
+  opacity: 1;
+}
+
+.Card_2 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_2.jpg');
+}
+
+.Overlay1_Card_2 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_2 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_2 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_2 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_2 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_2 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_2 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_2 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_2:hover .Titlu1_Card_2 {
+  opacity: 0;
+}
+
+.Card_2:hover .Titlu2_Card_2 {
+  opacity: 0;
+}
+
+.Card_2:hover .Overlay2_Card_2 {
+  opacity: 1;
+}
+
+.Card_2:hover .Overlay2_Card_2 h3 {
+  opacity: 1;
+}
+
+.Card_2:hover .Overlay2_Card_2 h2 {
+  opacity: 1;
+}
+
+.Card_2:hover .Overlay2_Card_2 p {
+  opacity: 1;
+}
+
+.Card_3 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_3.jpg');
+}
+
+.Overlay1_Card_3 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_3 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_3 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_3 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_3 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_3 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_3 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_3 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_3:hover .Titlu1_Card_3 {
+  opacity: 0;
+}
+
+.Card_3:hover .Titlu2_Card_3 {
+  opacity: 0;
+}
+
+.Card_3:hover .Overlay2_Card_3 {
+  opacity: 1;
+}
+
+.Card_3:hover .Overlay2_Card_3 h3 {
+  opacity: 1;
+}
+
+.Card_3:hover .Overlay2_Card_3 h2 {
+  opacity: 1;
+}
+
+.Card_3:hover .Overlay2_Card_3 p {
+  opacity: 1;
+}
+
+.Card_4 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_4.jpg');
+}
+
+.Overlay1_Card_4 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_4 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_4 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_4 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_4 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_4 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_4 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_4 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_4:hover .Titlu1_Card_4 {
+  opacity: 0;
+}
+
+.Card_4:hover .Titlu2_Card_4 {
+  opacity: 0;
+}
+
+.Card_4:hover .Overlay2_Card_4 {
+  opacity: 1;
+}
+
+.Card_4:hover .Overlay2_Card_4 h3 {
+  opacity: 1;
+}
+
+.Card_4:hover .Overlay2_Card_4 h2 {
+  opacity: 1;
+}
+
+.Card_4:hover .Overlay2_Card_4 p {
+  opacity: 1;
+}
+
+.Card_5 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_5.jpg');
+}
+
+.Overlay1_Card_5 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_5 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_5 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_5 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_5 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_5 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_5 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_5 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_5:hover .Titlu1_Card_5 {
+  opacity: 0;
+}
+
+.Card_5:hover .Titlu2_Card_5 {
+  opacity: 0;
+}
+
+.Card_5:hover .Overlay2_Card_5 {
+  opacity: 1;
+}
+
+.Card_5:hover .Overlay2_Card_5 h3 {
+  opacity: 1;
+}
+
+.Card_5:hover .Overlay2_Card_5 h2 {
+  opacity: 1;
+}
+
+.Card_5:hover .Overlay2_Card_5 p {
+  opacity: 1;
+}
+
+.Card_6 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_6.jpg');
+}
+
+.Overlay1_Card_6 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_6 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_6 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_6 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_6 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_6 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_6 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_6 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_6:hover .Titlu1_Card_6 {
+  opacity: 0;
+}
+
+.Card_6:hover .Titlu2_Card_6 {
+  opacity: 0;
+}
+
+.Card_6:hover .Overlay2_Card_6 {
+  opacity: 1;
+}
+
+.Card_6:hover .Overlay2_Card_6 h3 {
+  opacity: 1;
+}
+
+.Card_6:hover .Overlay2_Card_6 h2 {
+  opacity: 1;
+}
+
+.Card_6:hover .Overlay2_Card_6 p {
+  opacity: 1;
+}
+
+.Card_7 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_7.jpg');
+}
+
+.Overlay1_Card_7 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_7 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_7 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_7 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_7 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_7 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_7 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_7 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_7:hover .Titlu1_Card_7 {
+  opacity: 0;
+}
+
+.Card_7:hover .Titlu2_Card_7 {
+  opacity: 0;
+}
+
+.Card_7:hover .Overlay2_Card_7 {
+  opacity: 1;
+}
+
+.Card_7:hover .Overlay2_Card_7 h3 {
+  opacity: 1;
+}
+
+.Card_7:hover .Overlay2_Card_7 h2 {
+  opacity: 1;
+}
+
+.Card_7:hover .Overlay2_Card_7 p {
+  opacity: 1;
+}
+
+.Card_8 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_8.jpg');
+}
+
+.Overlay1_Card_8 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_8 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_8 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_8 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_8 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_8 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_8 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_8 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_8:hover .Titlu1_Card_8 {
+  opacity: 0;
+}
+
+.Card_8:hover .Titlu2_Card_8 {
+  opacity: 0;
+}
+
+.Card_8:hover .Overlay2_Card_8 {
+  opacity: 1;
+}
+
+.Card_8:hover .Overlay2_Card_8 h3 {
+  opacity: 1;
+}
+
+.Card_8:hover .Overlay2_Card_8 h2 {
+  opacity: 1;
+}
+
+.Card_8:hover .Overlay2_Card_8 p {
+  opacity: 1;
+}
+
+.Card_9 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_9.jpg');
+}
+
+.Overlay1_Card_9 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_9 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_9 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_9 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_9 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_9 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_9 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_9 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_9:hover .Titlu1_Card_9 {
+  opacity: 0;
+}
+
+.Card_9:hover .Titlu2_Card_9 {
+  opacity: 0;
+}
+
+.Card_9:hover .Overlay2_Card_9 {
+  opacity: 1;
+}
+
+.Card_9:hover .Overlay2_Card_9 h3 {
+  opacity: 1;
+}
+
+.Card_9:hover .Overlay2_Card_9 h2 {
+  opacity: 1;
+}
+
+.Card_9:hover .Overlay2_Card_9 p {
+  opacity: 1;
+}
+
+.Card_10 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_10.jpg');
+}
+
+.Overlay1_Card_10 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_10 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_10 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_10 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_10 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_10 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_10 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_10 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_10:hover .Titlu1_Card_10 {
+  opacity: 0;
+}
+
+.Card_10:hover .Titlu2_Card_10 {
+  opacity: 0;
+}
+
+.Card_10:hover .Overlay2_Card_10 {
+  opacity: 1;
+}
+
+.Card_10:hover .Overlay2_Card_10 h3 {
+  opacity: 1;
+}
+
+.Card_10:hover .Overlay2_Card_10 h2 {
+  opacity: 1;
+}
+
+.Card_10:hover .Overlay2_Card_10 p {
+  opacity: 1;
+}
+
+.Card_11 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_11.jpg');
+}
+
+.Overlay1_Card_11 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_11 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_11 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_11 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_11 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_11 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_11 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_11 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_11:hover .Titlu1_Card_11 {
+  opacity: 0;
+}
+
+.Card_11:hover .Titlu2_Card_11 {
+  opacity: 0;
+}
+
+.Card_11:hover .Overlay2_Card_11 {
+  opacity: 1;
+}
+
+.Card_11:hover .Overlay2_Card_11 h3 {
+  opacity: 1;
+}
+
+.Card_11:hover .Overlay2_Card_11 h2 {
+  opacity: 1;
+}
+
+.Card_11:hover .Overlay2_Card_11 p {
+  opacity: 1;
+}
+
+.Card_12 {
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url('Poze/Card2_12.jpg');
+}
+
+.Overlay1_Card_12 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.Overlay_12 {
+  position: absolute;
+  background-color: #4E9F3D;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.Titlu1_Card_12 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 80px;
+  top: 60px;
+  z-index: 2;
+}
+
+.Titlu2_Card_12 {
+  position: relative;
+  font-family: Light;
+  color: #DFDFDF;
+  font-size: 70px;
+  margin: 10px;
+  top: 40px;
+  z-index: 2;
+}
+
+.Overlay2_Card_12 {
+  color: #DFDFDF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background-color: #4E9F3D;
+  opacity: 0;
+  z-index: 10;
+}
+
+.Overlay2_Card_12 h2 {
+  opacity: 0;
+  font-family: Bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.Overlay2_Card_12 h3 {
+  opacity: 0;
+  font-family: Regular;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Overlay2_Card_12 p {
+  opacity: 0;
+  font-family: Light;
+  font-size: 30px;
+  margin: 0;
+}
+
+.Card_12:hover .Titlu1_Card_12 {
+  opacity: 0;
+}
+
+.Card_12:hover .Titlu2_Card_12 {
+  opacity: 0;
+}
+
+.Card_12:hover .Overlay2_Card_12 {
+  opacity: 1;
+}
+
+.Card_12:hover .Overlay2_Card_12 h3 {
+  opacity: 1;
+}
+
+.Card_12:hover .Overlay2_Card_12 h2 {
+  opacity: 1;
+}
+
+.Card_12:hover .Overlay2_Card_12 p {
+  opacity: 1;
+}

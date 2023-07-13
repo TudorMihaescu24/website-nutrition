@@ -1,0 +1,76 @@
+/*
+#191A19
+#352d2f
+#1E5128
+#4E9F3D
+#D8E9A8 */
+@font-face {
+  font-family: Light;
+  src: url('Fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: Regular;
+  src: url('Fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: Bold;
+  src: url('Fonts/OpenSans-Bold.ttf');
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #352d2f;
+  color:#DFDFDF;
+}
+
+h1 {
+  font-family: Bold;
+  font-size: 60px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  margin-top: 20%;
+}
+
+h2 {
+  font-family: Bold;
+  font-size: 60px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  margin-top: 20%;
+}
+
+.ContinuaContact {
+  margin: 0;
+  font-family: Light;
+  font-size: 40px;
+  position: absolute;
+  text-decoration: none;
+  color: #DFDFDF;
+  z-index: 3;
+  border: 2px #DFDFDF solid;
+  border-radius: 15px;
+  padding: 2px 25px 2px 25px;
+  opacity: 0.9;
+  transition-duration: 0.5s;
+  text-align: center;
+  width: 50%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ContinuaContact:hover {
+  background-color: #DFDFDF;
+  color: #4E9F3D;
+  opacity: 0.9;
+}

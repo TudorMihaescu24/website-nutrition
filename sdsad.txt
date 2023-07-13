@@ -1,0 +1,43 @@
+<?php
+($con = mysqli_connect("localhost", "root", "")) or die("cannot connect");
+mysqli_select_db($con, "nutritie");
+
+$eroare = 0;
+
+if (isset($_POST["nume"])) {
+  $nume = $_POST["nume"];
+} else{
+  $eroare = 1;
+}
+
+if (isset($_POST["prenume"])) {
+  $prenume = $_POST["prenume"];
+}else{
+  $eroare = 1;
+}
+
+if (isset($_POST["email"])) {
+  $email = $_POST["email"];
+}else{
+  $eroare = 1;
+}
+
+
+if (isset($_POST["feedback"])) {
+  $feedback = $_POST["feedback"];
+}else{
+$eroare = 1;
+}
+
+if($eroare == 0){
+  $sql = "INSERT INTO contact (NUME, PRENUME, EMAIL, FEEDBACK) VALUES ('$nume', '$prenume', '$email', '$feedback')";
+}
+else{
+  echo "Datele nu au fost introduse"
+}
+
+mysqli_query($con, $sql);
+
+
+$con->close();
+?>

@@ -1,0 +1,310 @@
+@font-face {
+  font-family: Light;
+  src: url('Fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: Regular;
+  src: url('Fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: Bold;
+  src: url('Fonts/OpenSans-Bold.ttf');
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 300vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.Meniu {
+  position: absolute;
+  top: 0;
+  background-color: #352d2f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.Logo {
+  text-decoration: none;
+  font-size: 30px;
+  color: #DFDFDF;
+  font-family: Bold;
+  padding: 5px 15px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Meniu ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+.Buton_Meniu {
+  text-decoration: none;
+  font-size: 20px;
+  color: #DFDFDF;
+  font-family: Light;
+  padding: 5px 15px;
+  transition: 0.5s;
+}
+
+.Buton_Meniu:hover {
+  color: #4E9F3D;
+  font-size: 21px;
+}
+
+.Meniu li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Partea1 {
+  position: absolutes;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('Poze/Background_5.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.Partea1 h1 {
+  margin: 0;
+  font-family: Regular;
+  font-size: 85px;
+  position: relative;
+  color: #DFDFDF;
+  z-index: 3;
+  top: 300px;
+  left: 160px;
+}
+
+.Partea1 p {
+  margin: 0;
+  margin-top: 20px;
+  font-family: Light;
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 25px;
+  position: relative;
+  color: #DFDFDF;
+  z-index: 3;
+  top: 300px;
+  left: 140px;
+}
+
+.OverlayP1 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1E5128;
+  opacity: 0.8;
+  z-index: 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ContinuaP1 {
+  margin: 0;
+  font-family: Light;
+  font-size: 40px;
+  position: relative;
+  text-decoration: none;
+  color: #DFDFDF;
+  z-index: 3;
+  top: 350px;
+  left: 50%;
+  border: 2px #DFDFDF solid;
+  border-radius: 15px;
+  padding: 2px 25px 2px 25px;
+  opacity: 0.9;
+  transition-duration: 0.5s;
+}
+
+.ContinuaP1:hover {
+  background-color: #DFDFDF;
+  color: #4E9F3D;
+  opacity: 0.9;
+}
+
+.ContinutP1 {
+  width: 70%;
+}
+
+
+.Partea2 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #352d2f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ContinutP2 {
+  width: 50%;
+}
+
+.Partea2 h1 {
+  margin: 0;
+  font-family: Regular;
+  font-size: 85px;
+  position: relative;
+  color: #DFDFDF;
+  z-index: 3;
+  top: 300px;
+  left: 140px;
+}
+
+.Partea2 p {
+  margin: 0;
+  font-family: Light;
+  font-size: 25px;
+  position: relative;
+  color: #DFDFDF;
+  z-index: 3;
+  text-align: justify;
+  text-indent: 60px;
+  top: 300px;
+  left: 140px;
+}
+
+.ImagineP2 {
+  position: absolute;
+  background-image: url('Poze/Img_2.jpg');
+  background-size: cover;
+  background-position: 30% 20%;
+  background-repeat: no-repeat;
+  z-index: 3;
+  height: 500px;
+  width: 400px;
+  top: 250px;
+  right: 250px;
+}
+
+.Overlay1P2 {
+  position: absolute;
+  background-color: #1E5128;
+  height: 500px;
+  width: 400px;
+  z-index: 2;
+  top: 270px;
+  right: 270px;
+}
+
+.Overlay2P2 {
+  position: absolute;
+  background-color: #DFDFDF;
+  height: 500px;
+  width: 400px;
+  z-index: 1;
+  top: 290px;
+  right: 290px;
+}
+
+.ContinuaP2 {
+  margin: 0;
+  font-family: Light;
+  font-size: 40px;
+  position: relative;
+  text-decoration: none;
+  color: #DFDFDF;
+  z-index: 3;
+  top: 340px;
+  left: 80%;
+  border: 2px #DFDFDF solid;
+  border-radius: 15px;
+  padding: 2px 25px 2px 25px;
+  opacity: 0.9;
+  transition-duration: 0.5s;
+}
+
+.ContinuaP2:hover {
+  background-color: #DFDFDF;
+  color: #4E9F3D;
+  opacity: 0.9;
+}
+
+.Partea3 {
+  position: absolutes;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('Poze/Background_7.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.Partea3 h1 {
+  margin: 0;
+  font-family: Regular;
+  font-size: 85px;
+  position: relative;
+  color: #DFDFDF;
+  z-index: 3;
+  top: 400px;
+  left: 160px;
+}
+
+.Partea3 p {
+  margin: 0;
+  font-family: Light;
+  font-size: 25px;
+  position: relative;
+  color: #DFDFDF;
+  z-index: 3;
+  top: 400px;
+  left: 140px;
+}
+
+.OverlayP3 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1E5128;
+  opacity: 0.8;
+  z-index: 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ContinuaP3 {
+  margin: 0;
+  font-family: Light;
+  font-size: 40px;
+  position: relative;
+  text-decoration: none;
+  color: #DFDFDF;
+  z-index: 3;
+  top: 430px;
+  left: 50%;
+  border: 2px #DFDFDF solid;
+  border-radius: 15px;
+  padding: 2px 25px 2px 25px;
+  opacity: 0.9;
+  transition-duration: 0.5s;
+}
+
+.ContinuaP3:hover {
+  background-color: #DFDFDF;
+  color: #4E9F3D;
+  opacity: 0.9;
+}
